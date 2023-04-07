@@ -6,9 +6,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Authentification from './pages/Authentification'
 import Database from './pages/Database'
 import Navbar from './shared/Navbar/Navbar'
+import { ThemeProvider } from '@emotion/react'
+import { dashboardTheme } from './dashboardTheme'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <ThemeProvider theme={dashboardTheme}>
     <BrowserRouter>
       <Routes>
         {/* <App /> */}
@@ -18,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
       </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
 )

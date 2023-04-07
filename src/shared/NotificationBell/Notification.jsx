@@ -12,7 +12,7 @@ const notificationData = [
         label: "Second notification"
     }
 ]
-const Notification = ({ iconsColor}) => {
+const Notification = ({ iconColor}) => {
     const newNotification = `you have ${notificationData.length} new notification`
     const notification = `No new notification`
     const [open, setOpen] = React.useState(false);
@@ -29,7 +29,7 @@ const Notification = ({ iconsColor}) => {
         <>
             <Tooltip title={notificationData.length ? newNotification : notification}>
                 <IconButton
-                    color={iconsColor}
+                    color={iconColor}
                     onClick={(e) => { notificationData.length ? handleOpen(e) : null }}
                     anchorEl={anchorEl}
                 >
