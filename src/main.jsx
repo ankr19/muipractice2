@@ -8,6 +8,7 @@ import Database from './pages/Database'
 import Navbar from './shared/Navbar/Navbar'
 import { ThemeProvider } from '@emotion/react'
 import { dashboardTheme } from './dashboardTheme'
+import Home from './pages/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,10 +16,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         {/* <App /> */}
-        <Route path='/' element={<Navbar />}>
+        {/* <Route path='/' element={<Navbar />}>
           <Route path='/authentifcation' element={<Authentification />} />
           <Route path='/database' element={<Database />} />
-        </Route>
+        </Route> */}
+        <Route path='/' element={<Home />} />
+
       </Routes>
     </BrowserRouter>
     </ThemeProvider>

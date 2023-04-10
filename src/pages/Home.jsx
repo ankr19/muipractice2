@@ -1,10 +1,11 @@
 import { Outlet } from 'react-router-dom'
 import React from 'react'
+import Box2 from '../common/Box'
 
 const Home = () => {
   return (
     <div>
-      {/* <Outlet /> */}
+      <Box2/>
     </div>
   )
 }
