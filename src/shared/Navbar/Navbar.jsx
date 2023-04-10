@@ -125,8 +125,9 @@ function Navbar(props) {
         <Toolbar />
         <Typography>
           <Header/>
-          <Outlet/>
+          
         </Typography>
+        <Outlet/>
       </Box>
     </Box>
   );
